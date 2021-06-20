@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 const name  = 'Joseph Santana';
 const h1 = <h1>Hello { name } I'm very happy to see you here</h1>
 
