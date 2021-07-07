@@ -26,13 +26,18 @@ export const App = () => {
         setTodos(newTodos);
     }
 
+    const handleClearAll = () => {
+        const newTodos = todos.filter((todo) => !todo.completed);
+        setTodos(newTodos);
+    }
+
 
     return (
         <>
             <TodoList todos={ todos } toggleTodo={ toggleTodo }/>
             <input ref={ todoTaskRef } type="text" placeholder="Nueva tarea" />
             <button onClick={ handleTodoAdd }>📝</button>
-            <button>🗑</button>
+            <button onClick={ handleClearAll }>🗑</button>
             <div>Te quedan { todos.filter((todo) => !todo.completed).length } tareas por hacer.</div>
         </>
         
