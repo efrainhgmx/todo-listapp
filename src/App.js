@@ -1,10 +1,22 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { TodoList  } from './components/TodoList';
 import { v4 as uuidv4 } from 'uuid';
+
+const KEY = "todoApp.todos";
 
 export const App = () => {
     const [todos, setTodos] = useState([{id: 1, task: "Tarea 1", completed: false }]);
     const todoTaskRef = useRef();
+    useEffect(() => {
+        localStorage.setItem(KEY, JSON.stringify(todos))
+    }, [todos]);
+
+    useEffect(() => {
+        const storedTodos = JSON.parse(localStorage.getItem(KEY));
+        if (storedTodos) {
+            setTodos(storedTodos);
+        }
+    }, []);
 
     const handleTodoAdd = () => {
         const task = todoTaskRef.current.value;
