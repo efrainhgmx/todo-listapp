@@ -15,14 +15,25 @@ export const App = () => {
             return[...prevTodos, {id: uuidv4(), task, completed: false}];
         })
 
+        todoTaskRef.current.value = null;
+
     };
+
+    const toggleTodo = (id) => {
+        const newTodos = [...todos];
+        const todo = newTodos.find((todo) => todo.id === id);
+        todo.completed = !todo.completed;
+        setTodos(newTodos);
+    }
+
 
     return (
         <>
-            <TodoList todos={todos}/>
+            <TodoList todos={ todos } toggleTodo={ toggleTodo }/>
             <input ref={ todoTaskRef } type="text" placeholder="Nueva tarea" />
             <button onClick={ handleTodoAdd }>📝</button>
             <button>🗑</button>
+            <div>Te quedan { todos.filter((todo) => !todo.completed).length } tareas por hacer.</div>
         </>
         
     )
