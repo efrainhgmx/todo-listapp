@@ -8,6 +8,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.user-wave {
-    font-size: 2.5rem;
+h1 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.8rem;
+}
+
+p {
+    text-decoration: underline;
+    font-size: 1.4rem;
 }
