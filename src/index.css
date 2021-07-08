@@ -30,12 +30,22 @@ p {
 .input-text {
     width: 210px;
     padding: 5px;
+    text-align: center;
+    outline: none;
 }
 
 button {
     padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 30px;
+    margin-left: 2px;
 }
 
 button:first-of-type {
-    margin-left: 2px;
+    background-color: green;
+}
+
+button:last-of-type {
+    background-color: #ff5722;
 }
