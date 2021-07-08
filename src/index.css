@@ -31,3 +31,11 @@ p {
     width: 210px;
     padding: 5px;
 }
+
+button {
+    padding: 5px;
+}
+
+button:first-of-type {
+    margin-left: 2px;
+}
