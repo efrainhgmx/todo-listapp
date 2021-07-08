@@ -48,7 +48,7 @@ export const App = () => {
         <main>
             <h1>Lista de Tareas</h1>
             <TodoList todos={ todos } toggleTodo={ toggleTodo }/>
-            <input ref={ todoTaskRef } type="text" placeholder="Nueva tarea" />
+            <input className="input-text" ref={ todoTaskRef } type="text" placeholder="Nueva tarea" />
             <button onClick={ handleTodoAdd }>📝</button>
             <button onClick={ handleClearAll }>🗑</button>
             <p>Te quedan { todos.filter((todo) => !todo.completed).length } tareas por hacer.</p>
