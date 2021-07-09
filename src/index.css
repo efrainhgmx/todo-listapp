@@ -91,3 +91,60 @@ label::before {
     top: -2px;
     text-align: center;
 }
+
+@media (min-width: 768px) {
+    .input-text {
+        width: 280px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+
+    ul {
+        max-width: 657px;
+    }
+
+    ul li {
+        font-size: 2.8rem;
+    }
+
+    .input-text {
+        width: 500px;
+        padding: 10px;
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 50px;
+        padding: 15px;
+        margin-left: 8px;
+    }
+
+    label::before {
+        content: '';
+        border: 2px solid white;
+        border-radius: 3px;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        margin-right: 10px;
+        position: relative;
+        top: 2px;
+    }
+
+    [type="checkbox"]:checked + label::before{
+        color: green;
+        border-color: green;
+        content: '✔';
+        font-size: 1.5rem;
+        top: -2px;
+        text-align: center;
+    }
+}
