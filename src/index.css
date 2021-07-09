@@ -20,6 +20,8 @@ h1 {
 ul {
     list-style: none;
     padding: 0;
+    width: 100%;
+    text-align: left;
 }
 
 ul li {
@@ -79,4 +81,7 @@ label::before {
     color: green;
     border-color: green;
     content: '✔';
+    font-size: 1rem;
+    top: -2px;
+    text-align: center;
 }
