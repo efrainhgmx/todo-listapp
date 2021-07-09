@@ -43,14 +43,21 @@ export const App = () => {
         setTodos(newTodos);
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Se hizo submit');
+    }
+
 
     return (
         <main>
             <h1>Lista de Tareas</h1>
             <TodoList todos={ todos } toggleTodo={ toggleTodo }/>
-            <input className="input-text" ref={ todoTaskRef } type="text" placeholder="Nueva tarea" />
-            <button onClick={ handleTodoAdd }>📝</button>
-            <button onClick={ handleClearAll }>🗑</button>
+            <form onSubmit={ handleSubmit }>
+                <input className="input-text" ref={ todoTaskRef } type="text" placeholder="Nueva tarea" />
+                <button onClick={ handleTodoAdd }>📝</button>
+                <button onClick={ handleClearAll }>🗑</button>
+            </form>
             <p>Te quedan { todos.filter((todo) => !todo.completed).length } tareas por hacer.</p>
         </main>
         
