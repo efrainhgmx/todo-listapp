@@ -148,3 +148,40 @@ label::before {
         text-align: center;
     }
 }
+
+@media (min-width: 1440px){
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    .input-text {
+        font-size: 3.4rem;
+        width: 950px;
+        padding: 20px;
+    }
+
+    ul li {
+        font-size: 4rem;
+    }
+
+    button {
+        width: 90px;
+        padding: 35px;
+        font-size: 2rem;
+    }
+
+    label::before {
+        border-width: 3px;
+        width: 30px;
+        height: 30px;
+    }
+
+    [type="checkbox"]:checked + label::before{
+     font-size: 2.5rem;
+    }
+
+}
