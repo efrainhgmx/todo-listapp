@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 const KEY = "todoApp.todos";
 
 export const App = () => {
-    const [todos, setTodos] = useState([{id: 1, task: "Tarea 1", completed: false }]);
+    const [todos, setTodos] = useState([]);
     const todoTaskRef = useRef();
     useEffect(() => {
         localStorage.setItem(KEY, JSON.stringify(todos))
