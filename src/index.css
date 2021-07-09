@@ -22,6 +22,8 @@ ul {
     padding: 0;
     width: 100%;
     text-align: left;
+    max-width: 550px;
+    margin: 0 auto;
 }
 
 ul li {
@@ -31,6 +33,10 @@ ul li {
 p {
     text-decoration: underline;
     font-size: 1.4rem;
+}
+
+form {
+    margin-top: 35px;
 }
 
 .input-text {
