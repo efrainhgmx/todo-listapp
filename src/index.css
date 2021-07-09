@@ -69,7 +69,14 @@ label::before {
     border-radius: 3px;
     width: 15px;
     height: 15px;
-    position: absolute;
-    left: -22px;
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
 
+[type="checkbox"]:checked + label::before{
+    color: green;
+    border-color: green;
+    content: '✔';
 }
