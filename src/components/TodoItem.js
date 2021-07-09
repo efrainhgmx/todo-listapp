@@ -9,8 +9,9 @@ export const TodoItem = ({ todo, toggleTodo }) => {
 
     return (
         <li>
-            <input type="checkbox" checked={ completed }  onChange={ handleTodoClick }/>
-            { task }
+            <input className="custom-radio-checkbox__input" type="checkbox" checked={ completed }  onChange={ handleTodoClick }/>
+            <span className="custom-radio-checkbox__show custom-radio-checkbox__show--checkbox"></span>
+            <span className="custom-radio-checkbox__text">{ task }</span>
         </li>
     )
 }
