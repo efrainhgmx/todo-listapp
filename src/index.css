@@ -49,3 +49,23 @@ button:first-of-type {
 button:last-of-type {
     background-color: #ff5722;
 }
+
+/* .custom-radio-checkbox__show--checkbox {
+    background-image: url(./img/checkbox-uncheck.png);
+}
+
+li > .custom-radio-checkbox__input {
+    display: none;
+}
+
+.custom-radio-checkbox__show {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: .5rem;
+    background-size: cover;
+}
+
+li > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--checkbox {
+    background-image: url(./img/checkbox-check.png);
+} */
