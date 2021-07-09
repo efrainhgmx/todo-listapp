@@ -59,6 +59,7 @@ export const App = () => {
                 <button onClick={ handleClearAll }>🗑</button>
             </form>
             <p>Te quedan { todos.filter((todo) => !todo.completed).length } tareas por hacer.</p>
+            <p>(Para añadir una tarea escribela y da clíck en el botón verde, para borrar la tarea debes haberla completado marcando el cuadro blanco y después dar clíck en el botón rojo). </p>
         </main>
         
     )

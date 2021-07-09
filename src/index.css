@@ -35,6 +35,10 @@ p {
     font-size: 1.4rem;
 }
 
+p:last-of-type {
+    text-decoration: none;
+}
+
 form {
     margin-top: 35px;
 }
@@ -104,7 +108,7 @@ label::before {
     }
 
     ul {
-        max-width: 657px;
+        max-width: 857px;
     }
 
     ul li {
