@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test on <App /> component Should be match with the snapshoot 1`] = `
+<main>
+  <h1>
+    Lista de Tareas
+  </h1>
+  <TodoList
+    todos={Array []}
+    toggleTodo={[Function]}
+  />
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      className="input-text"
+      placeholder="Nueva tarea"
+      type="text"
+    />
+    <button
+      onClick={[Function]}
+    >
+      📝
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      🗑
+    </button>
+  </form>
+  <p>
+    Te quedan 
+    0
+     tareas por hacer.
+  </p>
+  <p>
+    (Para añadir una tarea escribela y da clíck en el botón verde, para borrar la tarea debes haberla completado marcando el cuadro blanco y después dar clíck en el botón rojo). 
+  </p>
+</main>
+`;
