@@ -3,21 +3,21 @@
 exports[`Test on <TodoList /> components Should be have the same lenght of task list 1`] = `
 <ul>
   <TodoItem
-    key="8dd399f2-931c-46c8-9bfa-cd14d078b6f5"
+    key="a2a9d66b-47d6-4459-ae36-4c330eee72ee"
     todo={
       Object {
         "completed": false,
-        "id": "8dd399f2-931c-46c8-9bfa-cd14d078b6f5",
+        "id": "a2a9d66b-47d6-4459-ae36-4c330eee72ee",
         "task": "Tarea 1",
       }
     }
   />
   <TodoItem
-    key="f7a32b6a-df10-4931-b597-42d86f453715"
+    key="7f9c0dab-5f1c-4acf-8d13-b59e382abf6a"
     todo={
       Object {
         "completed": false,
-        "id": "f7a32b6a-df10-4931-b597-42d86f453715",
+        "id": "7f9c0dab-5f1c-4acf-8d13-b59e382abf6a",
         "task": "Tarea 2",
       }
     }

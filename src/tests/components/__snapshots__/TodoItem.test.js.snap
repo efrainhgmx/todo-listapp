@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test on <TodoItem /> component Id should be the same as task 1`] = `
+<li>
+  <input
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label />
+</li>
+`;
