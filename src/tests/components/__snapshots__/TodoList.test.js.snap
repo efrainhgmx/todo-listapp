@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test on <TodoList /> components Should be have the same lenght of task list 1`] = `
+<ul>
+  <TodoItem
+    key="8dd399f2-931c-46c8-9bfa-cd14d078b6f5"
+    todo={
+      Object {
+        "completed": false,
+        "id": "8dd399f2-931c-46c8-9bfa-cd14d078b6f5",
+        "task": "Tarea 1",
+      }
+    }
+  />
+  <TodoItem
+    key="f7a32b6a-df10-4931-b597-42d86f453715"
+    todo={
+      Object {
+        "completed": false,
+        "id": "f7a32b6a-df10-4931-b597-42d86f453715",
+        "task": "Tarea 2",
+      }
+    }
+  />
+</ul>
+`;

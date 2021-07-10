@@ -8,7 +8,7 @@ export const TodoItem = ({ todo, toggleTodo }) => {
     }
 
     return (
-        <li>
+        <li className="listItem">
             <input type="checkbox" id={ id } checked={ completed }  onChange={ handleTodoClick }/>
             <label htmlFor={ id }>{ task }</label>
         </li>
