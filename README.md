@@ -2,4 +2,6 @@
 
 **Hooks:** useState and useEffect.
 
-This app use local storage in browser for remember every task complete or not complete.
+This app use local storage of browser for remember every task complete or not complete.
+
+!["To Do App with React"](./To-do-list.gif)
